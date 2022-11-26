@@ -78,6 +78,19 @@ Así pues, se determinaron zonas críticas, donde se activan las salidas digital
  
  ![image](https://user-images.githubusercontent.com/112737454/204072510-707d1647-aaa0-4ee2-bdad-5fb8b9f181e5.png)
  
+ Finalmente, con esos puntos creados, se generan las trayectorias que debe seguir el _IRB\_140_ para cumplir con la misión. Las trayectorias creadas describen el tramo de una herramienta, hay una trayectoria para la sujeción y otra para la liberación de cada pieza. En la siguiente imagen se observa la trayectoria de sujeción del émbolo.
+ 
+ ![image](https://user-images.githubusercontent.com/112737454/204072803-fd44e44a-4f63-4510-a5a0-7eea6f475f29.png)
+ 
+ Ya con las trayectorias creadas, se procede a programar el RAPID. 
+ 
+ ### 5. RAPID
+ 
+ 
+
+ 
+ 
+ 
  El paso siguiente fue ubicar los distintos TCP para poder generar las trayectorias que debe seguir el robot. Para esto, se tomaron 3 puntos de movimiento por pieza: el punto donde la herramienmta entra en contacto con la pieza, el punto cercano a la pieza, donde empieza la succión y la velocidad disminuye y un punto que evita movimientos bruscos. En la siguiente imagen se muestra como se crearon esos TCP
  
  ![image](https://user-images.githubusercontent.com/112737454/204072648-e2719e11-44d1-4e74-8316-7de8da91149d.png)
