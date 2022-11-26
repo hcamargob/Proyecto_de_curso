@@ -1,0 +1,248 @@
+MODULE Module1
+   CONST jointtarget JointTarget_2:=[[15,29,3,6,7,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A1_0_3:=[[499.5,235,316],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A1_0_2:=[[499.5,235,76],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A1_0:=[[499.5,235,71],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B1_0:=[[702,280,63],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B2_0:=[[702,325,63],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A2_0_3:=[[498.5,190,311],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A2_0_2:=[[498.5,190,71],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A2_0:=[[498.5,190,46],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P1_0:=[[520,437.5,63],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P2_0:=[[520,347.5,63],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget T_0:=[[585,392.5,63],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B1_0_3:=[[702,280,308],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B1_0_2:=[[702,280,83],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B2_0_3:=[[702,325,308],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B2_0_2:=[[702,325,83],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P1_0_3:=[[520,437.5,328],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P1_0_2:=[[520,437.5,83],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P2_0_3:=[[520,347.5,328],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P2_0_2:=[[520,347.5,83],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget T_0_3:=[[585,392.5,328],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget T_0_2:=[[585,392.5,83],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B1_F_3:=[[575.5,-65,308.5],[0,1,0,0],[-1,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B1_F_2:=[[575.5,-65,83.5],[0,1,0,0],[-1,-1,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B2_F_3:=[[575.5,-66,338.7],[0,0,1,0],[-1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B2_F_2:=[[575.5,-66,93.7],[0,0,1,0],[-1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget B2_F:=[[575.5,-66,93.7],[0,0,1,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget T_F_3:=[[575.5,-131.5,333.7],[0,0.707106781,0.707106781,0],[-1,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget T_F_2:=[[575.5,-131.5,88.7],[0,0.707106781,0.707106781,0],[-1,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget T_F:=[[575.5,-131.5,68.7],[0,0.707106781,0.707106781,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A2_F_3:=[[618.4,-269.5,326.6],[0,-0.707106781,0.707106781,0],[-1,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A2_F_2:=[[618.4,-269.5,81.6],[0,-0.707106781,0.707106781,0],[-1,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A2_F:=[[618.4,-269.5,81.6],[0,-0.707106781,0.707106781,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A1_F_3:=[[533.5,-270.6,326.6],[0,-0.707106781,0.707106781,0],[-1,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A1_F_2:=[[533.5,-270.6,66.6],[0,-0.707106781,0.707106781,0],[-1,-1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget A1_F:=[[533.5,-270.6,46.6],[0,-0.707106781,0.707106781,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P1_F_3:=[[531,-367,348.6],[0,0.707106781,0.707106781,0],[-1,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P1_F_2:=[[531,-367,103.6],[0,0.707106781,0.707106781,0],[-1,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P1_F:=[[531,-367,83.6],[0,0.707106781,0.707106781,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P2_F_3:=[[621,-367,348.6],[0,0.707106781,0.707106781,0],[-1,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P2_F_2:=[[621,-367,103.6],[0,0.707106781,0.707106781,0],[-1,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget P2_F:=[[621,-367,83.6],[0,0.707106781,0.707106781,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST jointtarget Home:=[[0,0,0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+   
+     PROC main()
+        
+         GoHome;
+       WaitDI DI_01,1;  
+                   
+                    
+                   
+        Base1;
+       PutBase1;
+       Embolo;
+       PutEmbolo;
+       Base2;
+       PutBase2;
+       Brazo1;
+       PutBeazo1;
+       Brazo2;
+       Pinza1;
+       PutPinza1;
+       Pinza2;
+       PutPinza2;
+       GoHome;
+                  
+                    
+    ENDPROC
+    
+    PROC Brazo1()
+                                                                         
+       
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0,v100,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_02, 1;      
+        WaitTime 0.5;
+        SetDO DO_02, 0;      
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    
+    PROC Base1()
+    
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B1_0_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B1_0,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_02, 1;      
+        WaitTime 0.5;
+        SetDO DO_02, 0;
+        MoveJ B1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC Base2()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B2_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B2_0_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B2_0,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_02, 1;      
+        WaitTime 0.5;
+        SetDO DO_02, 0;
+        MoveJ B2_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC Brazo2()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ [[498.5,190,311],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]],v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A2_0_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A2_0,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_02, 1;      
+        WaitTime 0.5;
+        SetDO DO_02, 0;
+        MoveJ [[498.5,190,311],[0,1,0,0],[0,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]],v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC Pinza1()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P1_0_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P1_0,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_02, 1;      
+        WaitTime 0.5;
+        SetDO DO_02, 0;
+        MoveJ P1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC Pinza2()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P2_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P2_0_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P2_0,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_02, 1;      
+        WaitTime 0.5;
+        SetDO DO_02, 0;
+        MoveJ P2_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC Embolo()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ T_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ T_0_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ T_0,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_02, 1;      
+        WaitTime 0.5;
+        SetDO DO_02, 0;
+        MoveJ T_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC PutBase1()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B1_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B1_F_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ [[575.5,-65,63.5],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]],v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_03, 1;      
+        WaitTime 0.5;
+        SetDO DO_03, 0;
+        MoveJ B1_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC PutBase2()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B2_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B2_F_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B2_F,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_03, 1;      
+        WaitTime 0.5;
+        SetDO DO_03, 0;
+        MoveJ B2_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC PutEmbolo()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ T_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ T_F_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ T_F,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_03, 1;      
+        WaitTime 0.5;
+        SetDO DO_03, 0;
+        MoveJ T_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC PutBrazo2()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A2_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A2_F_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A2_F,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_03, 1;      
+        WaitTime 0.5;
+        SetDO DO_03, 0;
+        MoveJ A2_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC PutBeazo1()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_F_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_F,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_03, 1;      
+        WaitTime 0.5;
+        SetDO DO_03, 0;
+        MoveJ A1_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC PutPinza1()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P1_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P1_F_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P1_F,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_03, 1;      
+        WaitTime 0.5;
+        SetDO DO_03, 0;
+        MoveJ P1_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC PutPinza2()
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P2_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P2_F_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ P2_F,v80,z100,Portaventosa\WObj:=Workobject_2;
+        WaitTime 1;
+        SetDO DO_03, 1;      
+        WaitTime 0.5;
+        SetDO DO_03, 0;
+        MoveJ P2_F_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    PROC GoHome()
+        MoveAbsJ Home,v150,z10,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+    
+   
+    
+    
+ENDMODULE
