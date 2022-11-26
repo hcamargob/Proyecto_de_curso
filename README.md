@@ -168,7 +168,12 @@ Así pues, se determinaron zonas críticas, donde se activan las salidas digital
     ENDPROC
  ```
  
+ Finalmente observamos la simulación:
  
+[ ![image](https://user-images.githubusercontent.com/112737454/204073966-79c5ba13-5f40-42d6-a60e-c4d5daea440c.png)](https://www.youtube.com/watch?v=cgZLgwYuy5s)
+
+ 
+
  
  
  
