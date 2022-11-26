@@ -75,9 +75,14 @@ Así pues, se determinaron zonas críticas, donde se activan las salidas digital
  
  ![image](https://user-images.githubusercontent.com/112737454/204072394-c7d29f5f-d4f1-4652-9ba7-a08fc38d6db8.png)
  
+ 
  Ya teniendo la herramienta, se procedió a incluir las piezas de trabajo al entorno, de tal manera que existen dos elementos, la salida con la distribución inicial, y la llegada con el acoplamiento del griper. 
  
  ![image](https://user-images.githubusercontent.com/112737454/204072510-707d1647-aaa0-4ee2-bdad-5fb8b9f181e5.png)
+ 
+  El paso siguiente fue ubicar los distintos TCP para poder generar las trayectorias que debe seguir el robot. Para esto, se tomaron 3 puntos de movimiento por pieza: el punto donde la herramienmta entra en contacto con la pieza, el punto cercano a la pieza, donde empieza la succión y la velocidad disminuye y un punto que evita movimientos bruscos. En la siguiente imagen se muestra como se crearon esos TCP
+ 
+ ![image](https://user-images.githubusercontent.com/112737454/204072648-e2719e11-44d1-4e74-8316-7de8da91149d.png)
  
  Finalmente, con esos puntos creados, se generan las trayectorias que debe seguir el _IRB\_140_ para cumplir con la misión. Las trayectorias creadas describen el tramo de una herramienta, hay una trayectoria para la sujeción y otra para la liberación de cada pieza. En la siguiente imagen se observa la trayectoria de sujeción del émbolo.
  
@@ -87,14 +92,88 @@ Así pues, se determinaron zonas críticas, donde se activan las salidas digital
  
  ### 5. RAPID
  
+ Se hace la sincronización de las trayectorias del espacio de trabajo con el RAPID, y se prueba trayectoría por trayectoria dentro del _main()_, corrigiendo errores de trayectorias y optimizando poco a poco el proceso. Por esta razón, cada trayectoria fue nombrada de manera particular con la pieza que se estaba manipulando.
+ 
+ ```
+ PROC main()
+              
+        Base1;
+       PutBase1;
+       Embolo;
+       PutEmbolo;
+       Base2;
+       PutBase2;
+       Brazo1;
+       PutBeazo1;
+       Brazo2;
+       Pinza1;
+       PutPinza1;
+       Pinza2;
+       PutPinza2;
+       GoHome;
+                  
+                    
+    ENDPROC
+ ```
+
+ El siguiente paso a realizar es incluir las entradas y salidas del controlador.
+ 
+ Se usa una sola entrada, la cual indica el arranque de funcionamiento. Se necesitan 2 salidas, estas indican la succión de la electroválvula. Estas entradas se configuran tal y como se realizó en el laboratorio 3.
+ 
+ ![image](https://user-images.githubusercontent.com/112737454/204073321-df813e63-9697-450b-9f0c-d90058080c97.png)
+
+ Se procede a programar en el RAPID las señales recientemente creadas y finalmente se realiza la simulación.
+ 
+ ```
+ PROC main()
+        
+         GoHome;
+       WaitDI DI_01,1;  
+        Base1;
+       PutBase1;
+       Embolo;
+       PutEmbolo;
+       Base2;
+       PutBase2;
+       Brazo1;
+       PutBeazo1;
+       Brazo2;
+       Pinza1;
+       PutPinza1;
+       Pinza2;
+       PutPinza2;
+       GoHome;
+                  
+                    
+    ENDPROC
+ ```
+ 
+ Para el funcionamiento de la ventosa, se configuraron las salidas dentro del código de las trayectorias, de tal manera que se acrivaran cuando estuvieran encima de la pieza. Observamos el ejemplo de la trayectoria de la primera base.
+ 
+ ```
+ PROC Base1()
+    
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B1_0_2,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ B1_0,v80,z100,Portaventosa\WObj:=Workobject_2;
+ 
+        WaitTime 1;            
+        SetDO DO_02, 1;      
+        WaitTime 0.5;
+        SetDO DO_02, 0;
+ 
+        MoveJ B1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+        MoveJ A1_0_3,v150,z100,Portaventosa\WObj:=Workobject_2;
+    ENDPROC
+ ```
+ 
+ 
+ 
+ 
+ 
  
 
- 
- 
- 
- El paso siguiente fue ubicar los distintos TCP para poder generar las trayectorias que debe seguir el robot. Para esto, se tomaron 3 puntos de movimiento por pieza: el punto donde la herramienmta entra en contacto con la pieza, el punto cercano a la pieza, donde empieza la succión y la velocidad disminuye y un punto que evita movimientos bruscos. En la siguiente imagen se muestra como se crearon esos TCP
- 
- ![image](https://user-images.githubusercontent.com/112737454/204072648-e2719e11-44d1-4e74-8316-7de8da91149d.png)
  
  
 
