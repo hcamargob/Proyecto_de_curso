@@ -38,7 +38,7 @@ Así pues, se determinaron zonas críticas, donde se activan las salidas digital
 
 ### 2. Descripción del Griper.
  
- Para el desarrollo del griper, se desarrolló una herramienta de 9 piezas, cumpliendo con el primer requerimiento de numero de piezas. las bases del griper son dos marcos cuadrados de 165 mm de lado. El émbolo usado es un perfil en T, con el mismo funcionamiento del mostrado en la guía. La te esta conectada a dos brazos que cierran el mecanismo con una semijunta que permite la apertura y cierre de las pinzas. Los planos de cada piexas son adjuntos a este repositorio. Esta es la distribución general de las piezas.
+ Para el desarrollo del griper, se desarrolló una herramienta de 9 piezas, cumpliendo con el primer requerimiento de numero de piezas. las bases del griper son dos marcos cuadrados de 165 mm de lado. El émbolo usado es un perfil en T, con el mismo funcionamiento del mostrado en la guía. La te esta conectada a dos brazos que cierran el mecanismo con una semijunta que permite la apertura y cierre de las pinzas. Los planos de cada piezas son adjuntos a este repositorio. Esta es la distribución general de las piezas.
  
  ![image](https://user-images.githubusercontent.com/112737454/204071182-07907569-7771-4ade-b835-05560c226dfb.png)
  
@@ -59,6 +59,13 @@ Así pues, se determinaron zonas críticas, donde se activan las salidas digital
  Se diseñó una herramienta sencilla para la ventosa, limitandose a la base que encaja con el plato porta herramientas, y una L, que es el acople con la ventosa. 
  
  ![image](https://user-images.githubusercontent.com/112737454/204071841-1731c866-f51a-4de1-a71f-a21e00dda0b8.png)
+ 
+ El soporte se realizó tenuendo en cuenta el largo del acople de la ventosa con el actuador neumático del laboratorio, teniendo una longitud de 60 mm. Esta herramienta se desarrolló a través de manufactura aditiva, está hecha en ácido poli-láctico (PLA), por eso se desarrollo en dos partes.
+ 
+ ![image](https://user-images.githubusercontent.com/112737454/204072108-e13c329c-09e2-4eb0-83c6-9b887154ff61.png)
+
+ ![image](https://user-images.githubusercontent.com/112737454/204072116-13fd1e00-d741-4c11-bc9f-81f198fc0d48.png)
+
  
  
 
