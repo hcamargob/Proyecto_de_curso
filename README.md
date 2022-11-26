@@ -66,7 +66,28 @@ Así pues, se determinaron zonas críticas, donde se activan las salidas digital
 
  ![image](https://user-images.githubusercontent.com/112737454/204072116-13fd1e00-d741-4c11-bc9f-81f198fc0d48.png)
 
+ Los planos de la herramienta también se encuentran en el repositorio.
  
+ ### 4. Ensamble en Robot Studio
+ 
+ El primer paso fue la creación de la herramienta, la cual fue importada desde Inventor y se le asigna su respectivo TCP. 
+ 
+ ![image](https://user-images.githubusercontent.com/112737454/204072394-c7d29f5f-d4f1-4652-9ba7-a08fc38d6db8.png)
+ 
+ Ya teniendo la herramienta, se procedió a incluir las piezas de trabajo al entorno, de tal manera que existen dos elementos, la salida con la distribución inicial, y la llegada con el acoplamiento del griper. 
+ 
+ ![image](https://user-images.githubusercontent.com/112737454/204072510-707d1647-aaa0-4ee2-bdad-5fb8b9f181e5.png)
+ 
+ El paso siguiente fue ubicar los distintos TCP para poder generar las trayectorias que debe seguir el robot. Para esto, se tomaron 3 puntos de movimiento por pieza: el punto donde la herramienmta entra en contacto con la pieza, el punto cercano a la pieza, donde empieza la succión y la velocidad disminuye y un punto que evita movimientos bruscos. En la siguiente imagen se muestra como se crearon esos TCP
+ 
+ ![image](https://user-images.githubusercontent.com/112737454/204072648-e2719e11-44d1-4e74-8316-7de8da91149d.png)
+ 
+ 
+
+ 
+ 
+
+
  
 
 
