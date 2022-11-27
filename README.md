@@ -173,9 +173,12 @@ Así pues, se determinaron zonas críticas, donde se activan las salidas digital
 [ ![image](https://user-images.githubusercontent.com/112737454/204073966-79c5ba13-5f40-42d6-a60e-c4d5daea440c.png)](https://www.youtube.com/watch?v=cgZLgwYuy5s)
 
  
+### 6. Video de Presentación
+ 
+[ ![image](https://user-images.githubusercontent.com/112737454/204119120-11d67565-4128-4fc3-bb47-77fbce544946.png)](https://www.youtube.com/watch?v=6dZij9uNTuE)
 
- 
- 
+
+
  
  
 
